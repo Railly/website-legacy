@@ -6,7 +6,7 @@ export function StyledLink({ to, uppercase, children, external }) {
       {external ? (
         <a
           href={to}
-          className="font-medium hover:text-green-400"
+          className="font-medium hover:text-blue-400 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -15,7 +15,7 @@ export function StyledLink({ to, uppercase, children, external }) {
       ) : (
         <Link href={to}>
           <a
-            className={`font-medium hover:text-green-500 transition-colors ${
+            className={`font-medium hover:text-blue-500 transition-colors ${
               uppercase && "uppercase"
             }`}
           >

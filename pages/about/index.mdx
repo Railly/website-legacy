@@ -1,0 +1,89 @@
+import PostLayout from 'components/Layouts/PostLayout'
+import Twitter from 'components/Icons/Twitter'
+import Github from 'components/Icons/Github'
+import postPic from 'public/next.png'
+import { ImageMd as Image } from 'components/Markdown/Image'
+
+export const meta = {
+  title: 'How I Built My Site with Next.js',
+  author: 'Railly Hugo',
+  date: 'Julio 15, 2021'
+}
+
+<Image src={postPic}/>
+
+I've always loved the idea of creating my own space on the internet. A digital garden where I can share what I enjoy, keep notes on different programming topics, and experiment with new tools.
+
+After playing with code for almost 3 years, I decided to transition into a technical role. I created this site to make it easy for potential employers to find my work. One of those leads came from Vercel, the company [I'm now working for](https://www.google.com).
+
+Since this site has been so beneficial for me, I wanted to share an overview of how I built it — how I chose the stack, how I made design and content decisions, the resources I found helpful, and my future plans for it.
+
+## Tech Stack
+When choosing the stack, I made decisions based on three things:
+
+* __Speed__ - I needed to publish quickly and avoided tools with steep learning curves.
+* __Experience__ - I wanted to use what I personally enjoyed, because side projects should be fun.
+* __Learning opportunities__ - Once I got the basic information out there, I also wanted to experiment with new tools and use my site as a playground.
+
+
+In the end, I settled for Next.js, MDX, Tailwind, Prisma and Typescript.
+
+### Next.js
+[Next.js](https://www.google.com) is a React.js framework that handles the setup and requirements of building modern websites.
+
+I personally enjoy using Next for a few reasons including:
+
+* It’s flexible enough to handle my current and future content and data requirements.
+* It helps with things that are normally tedious to set up such as [Webpack](https://www.google.com), [Babel](https://www.google.com), [Typescript](https://www.google.com) and [Eslint](https://www.google.com).
+* It comes with in-built performance benefits such as code-splitting, image and script optimizations, flexible options for data fetching methods, and API Routes.
+* It offers a great developer experience with little to zero config such as fast refresh.
+
+What I have appreciated about Next.js over the years is that it has allowed me to implement advanced features that would normally be outside of the league of a solo developer and following its recommendations has naturally led me to build better front-end applications.
+
+Having both the structure and style of my component in the same file meant…
+
+* Making stylistic changes didn’t involve constant switching between files to sync class names with their CSS declarations.
+* I didn’t have to come up with my own class names for every component. E.g <code>.component-wrapper</code>, <code>.component-header</code>, <code>.component-body-image</code>.
+* I didn’t have unused CSS rules lying around when I deleted a component I was no longer using.
+
+## The Future
+I want this to be a place that grows with me and hopefully helps others on their journey. I don’t have an answer to how I’ll go about doing everything yet and expect some iterations, but for now, I’m happy with the starting point.
+
+If you have any questions, feedback or suggestions for this site, feel free to reach out to me on [Twitter](https://www.google.com) or [Github](https://www.google.com). I’d love to meet you!
+
+```
+import React from 'react'
+import Example from './place'
+
+export default () => <Example />
+```
+
+```javascript:hello.js
+<div
+  style={{backgroundColor: 'rebeccapurple', padding: '20px', marginTop: '20px'}}
+/>
+```
+
+```
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>Railly Hugo</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <MDXProvider components={components}>
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+      </MDXProvider>
+      <Footer />
+    </>
+  );
+}
+```
+
+
+
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>

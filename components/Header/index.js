@@ -14,18 +14,19 @@ export default function Header() {
           <Link to="/blog">Blog</Link>
           <Link to="https://twitter.com/RaillyHugo" external>
             <Twitter
-              className="hover:fill-current text-green-500 transition-colors"
+              className="hover:fill-current text-blue-500 transition-colors"
               height={25.6}
               width={20.9}
             />
           </Link>
           <Link to="https://github.com/Railly" external>
             <Github
-              className="hover:fill-current text-green-500 transition-colors"
+              className="hover:fill-current text-blue-500 transition-colors"
               height={25.6}
               width={20.9}
             />
           </Link>
+          <button>Hello</button>
         </nav>
       </div>
     </header>
