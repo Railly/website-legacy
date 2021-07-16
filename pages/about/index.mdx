@@ -43,13 +43,13 @@ What I have appreciated about Next.js over the years is that it has allowed me t
 Having both the structure and style of my component in the same file meant…
 
 * Making stylistic changes didn’t involve constant switching between files to sync class names with their CSS declarations.
-* I didn’t have to come up with my own class names for every component. E.g <code>.component-wrapper</code>, <code>.component-header</code>, <code>.component-body-image</code>.
+* I didn’t have to come up with my own class names for every component. E.g .component-wrapper, .component-header, .component-body-image.
 * I didn’t have unused CSS rules lying around when I deleted a component I was no longer using.
 
 ## The Future
 I want this to be a place that grows with me and hopefully helps others on their journey. I don’t have an answer to how I’ll go about doing everything yet and expect some iterations, but for now, I’m happy with the starting point.
 
-If you have any questions, feedback or suggestions for this site, feel free to reach out to me on [Twitter](https://www.google.com) or [Github](https://www.google.com). I’d love to meet you!
+If you have any questions, feedback or suggestions for this site, feel free to reach out to me on [Twitter](https://www.google.com) or [Github](https://www.google.com).
 
 ```
 import React from 'react'
@@ -58,7 +58,7 @@ import Example from './place'
 export default () => <Example />
 ```
 
-```javascript:hello.js
+```
 <div
   style={{backgroundColor: 'rebeccapurple', padding: '20px', marginTop: '20px'}}
 />
@@ -82,6 +82,12 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
+
+...
+client.on("message", function(message) {
+  if (message.author.bot) return;
+});
+...
 ```
 
 

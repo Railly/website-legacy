@@ -1,19 +1,20 @@
 import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/oceanicNext";
+import lighttheme from "prism-react-renderer/themes/github";
+import darktheme from "prism-react-renderer/themes/nightOwl";
 
-export default function Code({ children }) {
+export default function Code({ children, darkMode }) {
   return (
     <Highlight
       {...defaultProps}
-      theme={theme}
+      theme={darkMode ? darktheme : lighttheme}
       code={children.trim()}
       language={"jsx"}
     >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
+      {({ style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className="pre"
+          className="text-sm bg-gray-50"
           style={{
-            ...style,
+            backgroundColor: darkMode ? style.backgroundColor : "",
             marginTop: 20,
             marginBottom: 20,
             padding: 16,

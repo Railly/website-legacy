@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className="pb-36 mt-24">
-        <div className="max-w-4xl px-4 mx-auto text-gray-800">
+        <div className="max-w-4xl px-4 mx-auto text-gray-800 dark:text-gray-200">
           <div className="border-t-2 pb-8 border-gray-300"></div>
           <div className="flex flex-col justify-between lg:flex-row">
             Hecho con Next.js🖤 y TailwindCSS 💦
