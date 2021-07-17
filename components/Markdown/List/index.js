@@ -5,7 +5,7 @@ const Ul = ({ children }) => <ul className="mb-6">{children}</ul>;
 const Li = ({ children }) => {
   return (
     <>
-      <li className="my-3">{children}</li>
+      <li className="my-3 dark:text-gray-200">{children}</li>
       <style jsx>{`
         li::before {
           padding-right: 1em;

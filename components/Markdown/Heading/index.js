@@ -3,11 +3,15 @@ const H1 = ({ children }) => (
 );
 
 const H2 = ({ children }) => (
-  <h2 className="text-2xl font-bold lg:text-2xl mb-3 mt-8">{children}</h2>
+  <h2 className="text-2xl font-bold lg:text-2xl mb-3 mt-8 dark:text-gray-200">
+    {children}
+  </h2>
 );
 
 const H3 = ({ children }) => (
-  <h3 className="text-2xl font-bold lg:text-xl mb-3 mt-8">{children}</h3>
+  <h3 className="text-2xl font-bold lg:text-xl mb-3 mt-8 dark:text-gray-200">
+    {children}
+  </h3>
 );
 
 const Heading = { H1, H2, H3 };
