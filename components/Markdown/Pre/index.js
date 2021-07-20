@@ -17,7 +17,16 @@ export default function Code({ children }) {
       language={"jsx"}
     >
       {({ style, tokens, getLineProps, getTokenProps }) => (
-        <pre className="overflow-x-auto my-10 p-5 w-full text-xs sm:text-base font-bold opacity-80 bg-gray-100 dark:bg-gray-900 ">
+        <pre
+          className="text-xs sm:text-base font-bold opacity-80 bg-gray-100 dark:bg-gray-900 
+          "
+          style={{
+            marginTop: 10,
+            marginBottom: 10,
+            padding: 10,
+            overflowX: "auto",
+          }}
+        >
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
