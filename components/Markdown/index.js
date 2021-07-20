@@ -2,6 +2,7 @@ import Anchor from "./Anchor";
 import Heading from "./Heading";
 import List from "./List";
 import Code from "./Pre";
+import Strong from "./Strong";
 import Text from "./Text";
 
 export const components = {
@@ -14,4 +15,5 @@ export const components = {
   ul: List.Ul,
   ol: List.Ol,
   li: List.Li,
+  strong: Strong,
 };

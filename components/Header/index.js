@@ -6,7 +6,7 @@ import { StyledLink as Link } from "components/Link";
 
 export default function Header({ darkMode, toggleMode }) {
   return (
-    <header className="sticky top-0 z-10 py-2 bg-white md:py-6 md:mb-6 dark:text-gray-200 dark:bg-gray-800">
+    <header className="backdrop-filter backdrop-blur-md bg-white bg-opacity-40 border-b border-gray-200 dark:border-gray-600 sticky top-0 z-10 py-2 md:py-6 md:mb-6 dark:text-gray-200 dark:bg-gray-800 dark:bg-opacity-40">
       <div className="px-4 mx-auto lg:max-w-5xl md:flex md:items-center md:justify-between">
         <Link to="/" uppercase>
           Railly Hugo
@@ -16,23 +16,23 @@ export default function Header({ darkMode, toggleMode }) {
           <Link to="/blog">Blog</Link>
           <Link to="https://twitter.com/RaillyHugo" external>
             <Twitter
-              className="fill-current dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-500  transition-colors"
+              className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-green-500  transition-colors"
               height={25.6}
               width={20.9}
             />
           </Link>
           <Link to="https://github.com/Railly" external>
             <Github
-              className="fill-current dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-500  transition-colors"
+              className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-green-500  transition-colors"
               height={25.6}
               width={20.9}
             />
           </Link>
           <button onClick={toggleMode}>
             {darkMode ? (
-              <LightMode className="fill-current dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-500  transition-colors" />
+              <LightMode className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-green-500  transition-colors" />
             ) : (
-              <DarkMode className="fill-current dark:text-gray-200 hover:text-blue-500  transition-colors" />
+              <DarkMode className="fill-current dark:text-gray-200 hover:text-indigo-500  transition-colors" />
             )}
           </button>
         </nav>

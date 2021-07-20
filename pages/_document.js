@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
             <link
               rel="preconnect"
               href="https://fonts.gstatic.com"
-              crossorigin={true.toString()}
+              crossOrigin={true.toString()}
             />
             <link
               href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -31,10 +31,10 @@ export default class MyDocument extends Document {
           }
 
           .dark *::selection {
-            background: #ffffff1a; /* WebKit/Blink Browsers */
+            background: #fcd34d33; /* WebKit/Blink Browsers */
           }
           .dark *::-moz-selection {
-            background: #eeeeee1a; /* Gecko Browsers */
+            background: #fcd34d33; /* Gecko Browsers */
           }
         `}</style>
       </>

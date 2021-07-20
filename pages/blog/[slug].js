@@ -5,6 +5,7 @@ import { NextSeo } from "next-seo";
 import Image from "next/image";
 import { useMemo } from "react";
 import { components } from "components/Markdown";
+import Heading from "components/Markdown/Heading";
 
 export const getStaticPaths = () => {
   const posts = getAllPostsMeta();
@@ -56,11 +57,19 @@ export default function PostPage({ meta, code }) {
       />
 
       <div className="container max-w-3xl px-4 mx-auto mt-24">
-        <h1 className="text-2xl font-bold md:text-4xl">{meta.title}</h1>
+        <Heading.H1>{meta.title}</Heading.H1>
 
-        <div className="flex justify-center font-medium mt-4 space-x-2 text-blue-600 bg-blue-50 w-56 px-1 rounded-md dark:text-gray-200 dark:bg-gray-600">
-          <div>Railly Hugo</div>
-          <div className="text-gray-300">&middot;</div>
+        <div className="flex justify-between font-medium py-2 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-lg dark:text-gray-200 dark:bg-green-700">
+          <Image
+            className="rounded-full"
+            src="/profile.png"
+            blurDataURL="/profile.png"
+            placeholder="blur"
+            width={25}
+            height={25}
+          />
+          <div>{`Railly Hugo`}</div>
+          <div>{` => `}</div>
           <div>{format(parseISO(meta.publishedAt), "MMMM dd, yyyy")}</div>
         </div>
 
