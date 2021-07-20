@@ -10,7 +10,7 @@ export const getStaticProps = async () => {
 
 export default function Blog({ posts }) {
   return (
-    <main className="max-w-4xl mx-auto mt-16 antialiased">
+    <main className="max-w-4xl mx-auto antialiased">
       <div className="px-4 mx-auto text-gray-900">
         <Heading.H1>Blog</Heading.H1>
         <Heading.H2>Publicaciones recientes</Heading.H2>

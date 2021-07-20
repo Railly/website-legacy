@@ -56,7 +56,7 @@ export default function PostPage({ meta, code }) {
         }}
       />
 
-      <div className="container max-w-3xl mx-auto mt-24">
+      <div className="container max-w-3xl mx-auto">
         <Heading.H1>{meta.title}</Heading.H1>
 
         <div className="flex justify-evenly font-medium py-1 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-xl dark:text-gray-200 dark:bg-green-700">

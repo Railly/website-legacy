@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 export default function About({ posts }) {
   return (
     <>
-      <main className="max-w-4xl mx-auto mt-16 antialiased">
+      <main className="max-w-4xl mx-auto antialiased">
         <div className="px-4 mx-auto text-gray-900 dark:text-gray-200">
           <Heading.H1>Hola, soy Railly Hugo.</Heading.H1>
           <p className="mt-2">
