@@ -56,15 +56,13 @@ export default function PostPage({ meta, code }) {
         }}
       />
 
-      <div className="container max-w-3xl px-4 mx-auto mt-24">
+      <div className="container max-w-3xl mx-auto mt-24">
         <Heading.H1>{meta.title}</Heading.H1>
 
-        <div className="flex justify-between font-medium py-2 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-lg dark:text-gray-200 dark:bg-green-700">
+        <div className="flex justify-evenly font-medium py-1 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-xl dark:text-gray-200 dark:bg-green-700">
           <Image
             className="rounded-full"
             src="/profile.png"
-            blurDataURL="/profile.png"
-            placeholder="blur"
             width={25}
             height={25}
           />

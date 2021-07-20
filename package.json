@@ -8,6 +8,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.0.1",
+    "@tailwindcss/line-clamp": "^0.2.1",
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^5.1.0",

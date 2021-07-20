@@ -12,6 +12,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require("@tailwindcss/line-clamp"),
     require("tailwindcss-animatecss")({
       classes: [
         "animate__animated",
