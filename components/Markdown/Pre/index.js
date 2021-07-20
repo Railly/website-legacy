@@ -18,7 +18,7 @@ export default function Code({ children }) {
     >
       {({ style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className="text-xs sm:text-base font-bold opacity-80 bg-gray-100 dark:bg-gray-900"
+          className="text-xs sm:text-base font-bold opacity-80 bg-gray-100 dark:bg-gray-900 overflow-x-auto"
           style={{
             marginTop: 20,
             marginBottom: 20,
