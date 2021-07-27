@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const getStaticProps = async () => {
-  const posts = getAllPostsMeta();
+  const posts = getAllPostsMeta("_posts");
   return { props: { posts } };
 };
 

@@ -8,7 +8,7 @@ import { components } from "components/Markdown";
 import Heading from "components/Markdown/Heading";
 
 export const getStaticPaths = () => {
-  const posts = getAllPostsMeta();
+  const posts = getAllPostsMeta("_posts");
   const paths = posts.map(({ slug }) => ({ params: { slug } }));
 
   return {
@@ -20,7 +20,7 @@ export const getStaticPaths = () => {
 
 export const getStaticProps = async (context) => {
   const slug = context.params?.slug;
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug, "_posts");
 
   return { props: post };
 };
