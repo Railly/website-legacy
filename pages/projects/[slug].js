@@ -58,7 +58,7 @@ export default function ProjectDetails({ meta, code }) {
         }}
       />
 
-      <div className="container max-w-3xl mx-auto">
+      <div className="container max-w-3xl mx-auto px-4">
         <Heading.H1>{meta.title}</Heading.H1>
         <div className="mt-10">
           <Component components={components} />

@@ -12,7 +12,7 @@ export default function Header({ darkMode, toggleMode }) {
         <nav className="flex justify-between w-96">
           <button onClick={toggleMode}>
             {darkMode ? (
-              <LightMode className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-green-500 transition-colors" />
+              <LightMode className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-yellow-500 transition-colors" />
             ) : (
               <DarkMode className="fill-current dark:text-gray-200 hover:text-indigo-500 transition-colors" />
             )}
@@ -21,14 +21,14 @@ export default function Header({ darkMode, toggleMode }) {
           <Link to="/blog">Blog</Link>
           <Link to="https://twitter.com/RaillyHugo" external>
             <Twitter
-              className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-green-500 transition-colors"
+              className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-blue-400 transition-colors"
               height={25.6}
               width={20.9}
             />
           </Link>
           <Link to="https://github.com/Railly" external>
             <Github
-              className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-green-500 transition-colors"
+              className="fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-blue-400 transition-colors"
               height={25.6}
               width={20.9}
             />
