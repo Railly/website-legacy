@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function StyledLink({ to, uppercase, children, external }) {
+export function StyledLink({ to, children, external }) {
   console.log();
   return (
     <>
@@ -15,11 +15,7 @@ export function StyledLink({ to, uppercase, children, external }) {
         </a>
       ) : (
         <Link href={to}>
-          <a
-            className={`font-medium hover:text-indigo-500 dark:hover:text-green-500 transition-colors ${
-              uppercase && "uppercase"
-            }`}
-          >
+          <a className="font-medium hover:text-indigo-500 dark:hover:text-green-500 transition-colors">
             {children}
           </a>
         </Link>

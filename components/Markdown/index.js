@@ -1,13 +1,15 @@
+import Button from "components/Button";
 import Anchor from "./Anchor";
 import Heading from "./Heading";
+import ImageMd from "./Image";
 import List from "./List";
 import Code from "./Pre";
 import Strong from "./Strong";
 import Text from "./Text";
-import Github from "components/Icons/Github";
 
 export const components = {
-  Github,
+  Button,
+  Image: ImageMd,
   a: Anchor,
   code: Code,
   h1: Heading.H1,

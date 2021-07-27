@@ -17,26 +17,11 @@ export default class MyDocument extends Document {
               rel="stylesheet"
             />
           </Head>
-          <body className="bg-white dark:bg-gray-800">
+          <body className="selection:bg-indigo-200 dark:selection:bg-purple-800/70 bg-white dark:bg-gray-800">
             <Main />
             <NextScript />
           </body>
         </Html>
-        <style jsx global>{`
-          *::selection {
-            background: #d1fae5; /* WebKit/Blink Browsers */
-          }
-          *::-moz-selection {
-            background: #d1fae5; /* Gecko Browsers */
-          }
-
-          .dark *::selection {
-            background: #fcd34d33; /* WebKit/Blink Browsers */
-          }
-          .dark *::-moz-selection {
-            background: #fcd34d33; /* Gecko Browsers */
-          }
-        `}</style>
       </>
     );
   }

@@ -1,9 +1,19 @@
 import Image from "next/image";
 
-export function ImageMd({ src }) {
+export default function ImageMd({ src, width, height }) {
   return (
-    <div className="relative my-10">
-      <Image src={src} placeholder="blur" className="rounded-2xl" />
+    <div
+      className="flex flex-wrap relative drop-shadow-xl
+      my-10"
+    >
+      <Image
+        className="rounded-lg"
+        src={src}
+        blurDataURL={src}
+        width={width}
+        height={height}
+        placeholder="blur"
+      />
     </div>
   );
 }
