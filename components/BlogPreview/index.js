@@ -11,8 +11,8 @@ export default function BlogPreview({ slug, image, title, description }) {
               src={`/${image}`}
               blurDataURL={`/${image}`}
               placeholder="blur"
-              width={1920}
-              height={960}
+              width={1764}
+              height={1131}
               className="align-top"
             />
           </div>

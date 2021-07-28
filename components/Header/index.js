@@ -17,7 +17,7 @@ export default function Header({ darkMode, toggleMode }) {
               <DarkMode className="fill-current dark:text-gray-200 hover:text-indigo-500 transition-colors" />
             )}
           </button>
-          <Link to="/projects">Portafolio</Link>
+          <Link to="/projects">Proyectos</Link>
           <Link to="/blog">Blog</Link>
           <Link to="https://twitter.com/RaillyHugo" external>
             <Twitter
