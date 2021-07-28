@@ -59,7 +59,7 @@ export default function PostPage({ meta, code }) {
       <div className="container max-w-3xl mx-auto px-4">
         <Heading.H1>{meta.title}</Heading.H1>
 
-        <div className="flex justify-evenly font-medium py-1 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-xl dark:text-gray-200 dark:bg-green-700">
+        <div className="flex justify-evenly font-medium py-1 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-xl dark:text-gray-200 dark:bg-blue-700/30">
           <Image
             className="rounded-full"
             src="/profile.png"
@@ -83,7 +83,7 @@ export default function PostPage({ meta, code }) {
           </div>
         ) : null}
 
-        <div className="mt-10">
+        <div className="text-gray-700 mt-10">
           <Component components={components} />
         </div>
       </div>

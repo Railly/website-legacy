@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
 
 export default function Projects({ projects }) {
   return (
-    <div className="container max-w-3xl px-4 mx-auto text-gray-900">
+    <div className="container max-w-3xl px-4 mx-auto text-gray-700">
       <Heading.H1>Proyectos</Heading.H1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
         {projects.map((project) => (

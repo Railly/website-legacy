@@ -6,7 +6,7 @@ import { StyledLink as Link } from "components/Link";
 
 export default function Header({ darkMode, toggleMode }) {
   return (
-    <header className="backdrop-filter backdrop-blur-md bg-white bg-opacity-40 border-b border-gray-200 dark:border-gray-600 sticky top-0 z-10 py-2 md:py-6 md:mb-6 dark:text-gray-200 dark:bg-gray-800 dark:bg-opacity-40">
+    <header className="backdrop-filter backdrop-blur-md bg-white bg-opacity-40 border-b border-gray-200 dark:border-gray-600 sticky top-0 z-10 py-2 md:py-6 md:mb-6 text-gray-700 dark:text-gray-200 dark:bg-gray-800 dark:bg-opacity-40">
       <div className="px-4 mx-auto lg:max-w-5xl md:flex md:items-center md:justify-between">
         <Link to="/">RAILLY HUGO</Link>
         <nav className="flex justify-between w-96">

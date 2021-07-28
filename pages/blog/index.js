@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
 
 export default function Blog({ posts }) {
   return (
-    <div className="container max-w-3xl px-4 mx-auto text-gray-900">
+    <div className="container max-w-3xl px-4 mx-auto text-gray-700">
       <Heading.H1>Blog</Heading.H1>
       <Heading.H2>Publicaciones recientes</Heading.H2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
