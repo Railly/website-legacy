@@ -75,8 +75,8 @@ export default function PostPage({ meta, code }) {
           <div className="mt-8 overflow-hidden rounded-2xl text-[0px]">
             <Image
               src={`/${meta.image}`}
-              width={1920}
-              height={960}
+              width={1764}
+              height={1131}
               blurDataURL={`/${meta.image}`}
               placeholder="blur"
             />

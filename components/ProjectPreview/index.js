@@ -18,7 +18,7 @@ export default function ProjectPreview({ slug, image, title, description }) {
           </div>
           <h2 className="text-2xl font-bold pb-2">{title}</h2>
           <p className="line-clamp-3">{description}</p>
-          <p className="mt-4 w-28 font-bold uppercase text-sm text-pink-600 border-transparent border-b-2 group-hover:border-pink-600 animate-bounce transition-transform">
+          <p className="mt-4 w-28 font-bold uppercase text-sm text-pink-600 dark:text-pink-400 border-transparent border-b-2 group-hover:border-pink-600 dark:group-hover:border-pink-400 animate-bounce transition-transform">
             Ver Proyecto
           </p>
         </a>
