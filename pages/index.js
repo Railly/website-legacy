@@ -33,14 +33,14 @@ export default function Home({ projects }) {
           </Button>
         </div>
       </div>
-      <div className="w-32 h-32 mt-10">
+      <div className="w-52 h-52 mt-10">
         <Image
           className="rounded-full"
-          blurDataURL="/profile.png"
-          src="/profile.png"
+          blurDataURL="/profile-3.png"
+          src="/profile-3.png"
           placeholder="blur"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
         />
       </div>
     </>

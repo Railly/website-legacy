@@ -1,19 +1,17 @@
-const Ol = ({ children }) => <ol className="mb-6">{children}</ol>;
+const Ol = ({ children }) => <ol className="mb-6 list-decimal">{children}</ol>;
 
-const Ul = ({ children }) => <ul className="mb-6">{children}</ul>;
+const Ul = ({ children }) => <ul className="mb-6 list-disc">{children}</ul>;
 
 const Li = ({ children }) => {
   return (
-    <>
+    <div className="ml-4">
       <li className="my-3 dark:text-gray-200">{children}</li>
       <style jsx>{`
-        li::before {
-          padding-right: 1em;
-          content: "•";
-          color: #d1d5db;
+        li::marker {
+          color: #999;
         }
       `}</style>
-    </>
+    </div>
   );
 };
 
