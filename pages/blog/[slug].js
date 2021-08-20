@@ -62,7 +62,7 @@ export default function PostPage({ meta, code }) {
         <div className="flex justify-evenly items-center font-medium py-1 mt-4 dark:bg-opacity-50 text-indigo-600 bg-indigo-50 w-72 px-1 rounded-xl dark:text-gray-200 dark:bg-blue-700/30">
           <Image
             className="rounded-full"
-            src="/profile-3.png"
+            src="/profile-2.png"
             width={30}
             height={30}
           />
