@@ -36,7 +36,7 @@ export default function Home({ projects }) {
       <div className="w-52 h-52 mt-10">
         <Image
           className="rounded-full"
-          blurDataURL="/profile-3.png"
+          blurDataURL="/profile.jpg"
           src="/profile-3.png"
           placeholder="blur"
           width={400}
