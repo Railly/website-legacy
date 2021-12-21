@@ -4,9 +4,12 @@ import Head from "next/head";
 import Header from "components/Header";
 import Footer from "components/Footer";
 import MainLayout from "components/Layouts/MainLayout";
+import { GA_TRACKING_ID, pageview } from "lib/gtag";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(undefined);
+  const router = useRouter();
 
   const toggleMode = () => {
     if (localStorage.theme === undefined) {
@@ -44,6 +47,18 @@ function MyApp({ Component, pageProps }) {
       document.documentElement.classList.remove("dark");
     }
   }, []);
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      pageview(url);
+      console.log(GA_TRACKING_ID);
+      console.log(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
