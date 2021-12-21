@@ -5,7 +5,7 @@ export default function BlogPreview({ slug, image, title, description }) {
   return (
     <div>
       <Link href={`/blog/${slug}`}>
-        <a className="rounded-md p-3 group block hover:text-indigo-500  hover:bg-indigo-50 dark:hover:bg-gray-700 dark:text-gray-200 hover:scale-105">
+        <a className="block p-3 transition rounded-md group hover:text-indigo-500 hover:bg-indigo-50 dark:hover:bg-gray-700 dark:text-gray-200 hover:scale-105">
           <div className="relative mb-4 overflow-hidden rounded-lg text-[0px]">
             <Image
               src={`/${image}`}

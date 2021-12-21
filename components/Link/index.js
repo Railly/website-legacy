@@ -7,7 +7,7 @@ export function StyledLink({ to, children, external }) {
       {external ? (
         <a
           href={to}
-          className="font-medium hover:text-indigo-400 dark:hover:text-blue-400"
+          className="font-medium transition hover:text-indigo-400 dark:hover:text-blue-400"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -15,7 +15,7 @@ export function StyledLink({ to, children, external }) {
         </a>
       ) : (
         <Link href={to}>
-          <a className="font-medium hover:text-indigo-500 dark:hover:text-blue-400">
+          <a className="font-medium transition hover:text-indigo-500 dark:hover:text-blue-400">
             {children}
           </a>
         </Link>
