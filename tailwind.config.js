@@ -5,6 +5,7 @@ module.exports = {
     "./_posts/**/*.mdx",
     "./_projects/**/*.mdx",
     "./lib/**/*.{js, ts, jsx, tsx}",
+    "./utils/**/*.{js, ts, jsx, tsx}",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
