@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 export default function Home({ projects }) {
   return (
     <>
-      <div className="px-10 text-gray-900 dark:text-gray-200">
+      <div className="w-4/5 text-gray-900 md:w-3/5 md:px-10 dark:text-gray-200">
         <Heading.H1>Hola, soy Railly Hugo.</Heading.H1>
         <p className="mt-6">
           Bienvenido/a a mi sitio web. Soy un estudiante de Ingeniería de
@@ -24,16 +24,16 @@ export default function Home({ projects }) {
         <p className="mt-3">
           Estoy activo en Twitter, quizá hayan cosas que te interese.
         </p>
-        <div className="flex justify-evenly sm:justify-center mt-10">
-          <Button to="/projects" type="primary">
+        <div className="flex flex-col items-center mt-10 md:flex-row justify-evenly sm:justify-center">
+          <Button to="/projects" type="primary" className="md:mr-8">
             Ver Proyectos
           </Button>
-          <Button to="/blog" type="secondary">
+          <Button to="/blog" type="secondary" className="mt-6 md:mt-0">
             Ir a Blog
           </Button>
         </div>
       </div>
-      <div className="w-52 h-52 mt-10">
+      <div className="mt-10 w-52 h-52">
         <Image
           className="rounded-full"
           blurDataURL="/profile-2.png"
