@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useMemo } from "react";
 import { components } from "components/Markdown";
 import Heading from "components/Markdown/Heading";
+import { chipStyle } from "utils/constanst";
 
 export const getStaticPaths = () => {
   const projects = getAllPostsMeta("_projects");
@@ -58,9 +59,10 @@ export default function ProjectDetails({ meta, code }) {
         }}
       />
 
-      <div className="container max-w-3xl mx-auto px-4">
+      <div className="container max-w-3xl px-4 mx-auto">
         <Heading.H1>{meta.title}</Heading.H1>
-        <div className="text-gray-700 mt-10">
+        <span className={chipStyle[meta.tag]}>{meta.tag}</span>
+        <div className="mt-10 text-gray-700">
           <Component components={components} />
         </div>
 
